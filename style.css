@@ -70,13 +70,13 @@ main {
   vertical-align: middle;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   main {
     justify-content: space-around; /* Garante espaçamento proporcional */
   }
 
   .card {
-    width: 10rem; /* Reduz mais os cards */
+    width: 8rem; /* Reduz mais os cards */
     height: 16rem;
   }
 }
