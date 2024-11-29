@@ -70,7 +70,7 @@ main {
   vertical-align: middle;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 350px) and (max-width: 480px) {
   main {
     justify-content: space-around; /* Garante espaçamento proporcional */
   }
@@ -78,5 +78,17 @@ main {
   .card {
     width: 8rem; /* Reduz mais os cards */
     height: 16rem;
+  }
+  
+  main {
+    display: flex; /* Alinha os cards em uma única linha */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaço entre os cards */
+    align-items: center;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    flex-wrap: wrap; /* Permite que os cards "quebrem" para a próxima linha */
+    max-width: 900px;
+    margin: auto; /* Centraliza o container horizontalmente */
   }
 }
