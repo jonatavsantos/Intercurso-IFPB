@@ -70,7 +70,7 @@ main {
   vertical-align: middle;
 }
 
-@media (min-width: 400px) and (max-width: 768px){
+@media (max-width: 600px) {
   main {
     justify-content: space-around; /* Garante espaçamento proporcional */
   }
