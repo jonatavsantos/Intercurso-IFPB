@@ -60,7 +60,7 @@
     display: inline;
     float: right;
     font-size: 18px;
-    margin-top: 1vh;
+    margin-top: -2vh;
   }
   
   .nav > .nav-links > a {
@@ -103,10 +103,10 @@
     }
 
     .nav-logo {
-        width: 10vh;
-        height: 10vh; 
-        margin-left: 1vh;
-        margin-top: 0.7vh; 
+        width: 5vh;
+        height: 5vh; 
+        margin-left: 2vh;
+        margin-top: 3vh; 
         object-fit: contain; 
       }
 
