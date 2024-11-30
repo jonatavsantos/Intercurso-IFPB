@@ -25,6 +25,10 @@
     text-align: left;
     margin-bottom: 15px;
   }
+
+  .title {
+    margin-bottom: -3vh;
+  }
   
   .nav {
     height: 70px;
@@ -60,7 +64,7 @@
     display: inline;
     float: right;
     font-size: 18px;
-    margin-top: -2vh;
+    margin-top: 1vh;
   }
   
   .nav > .nav-links > a {

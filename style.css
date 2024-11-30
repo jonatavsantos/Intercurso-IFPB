@@ -10,6 +10,10 @@ main {
   margin: auto; /* Centraliza o container horizontalmente */
 }
 
+.button {
+  margin-right: 6vh;
+}
+
 .card {
   width: 12rem;
   height: 24rem;
@@ -30,10 +34,10 @@ main {
   opacity: 0.9;
   transition: opacity 0.2s ease-out;
 }
-.card h2 {
+.card h3 {
   position: absolute;
   inset: auto auto 30px 30px;
-  margin: 0;
+  margin: -3vh;
   transition: inset 0.3s 0.3s ease-out;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: normal;
@@ -53,7 +57,7 @@ main {
   color: inherit;
   text-decoration: none;
 }
-.card:hover h2 {
+.card:hover h3 {
   inset: auto auto 220px 30px;
   transition: inset 0.3s ease-out;
 }
@@ -68,6 +72,7 @@ main {
 
 .material-symbols-outlined {
   vertical-align: middle;
+  margin-right: 1vh;
 }
 
 @media (min-width: 350px) and (max-width: 480px) {
