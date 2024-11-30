@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <title>Intercurso Inscrição</title>
+</head>
+<body>
+    <form action="https://formsubmit.co/killuahunter270@gmail.com" method="POST" id="team-form">
+      <input type="hidden" name="_next" value="http://intercursos.netlify.app/inscricao/inscricao.html">
+      <input type="hidden" name="_captcha" value="false">
+        <h2>Cadastro da Equipe</h2>
+        
+        <label for="course">Curso da Equipe</label>
+        <input type="text" id="course" name="course" placeholder="Digite o curso da equipe" required>
+    
+        <label for="captain-name">Nome Completo do Capitão</label>
+        <input type="text" id="captain-name" name="captain-name" placeholder="Digite o nome do capitão" required>
+    
+        <label for="captain-id">Matrícula do Capitão</label>
+        <input type="text" id="captain-id" name="captain-id" placeholder="Digite a matrícula do capitão" required>
+    
+        <label>Jogadores</label>
+        <div class="players-container" id="players-container">
+          <div class="player-field">
+            <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
+          </div>
+        </div>
+        <button type="button" id="add-player-button">Adicionar Jogador</button>
+    
+        <button id="submit-button" type="submit">Enviar</button>
+      </form>
+</body>
+<script src="../js/subscribe.js"></script>
+</html>
