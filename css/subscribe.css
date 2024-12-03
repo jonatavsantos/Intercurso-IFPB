@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    
     background-color: #f4f4f4;
   }
   
@@ -12,6 +12,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: auto;
+    margin-top: 5vh;
   }
   
   label, h2 {
@@ -88,6 +89,13 @@ body {
   
   .remove-btn:hover {
     background-color: #c0392b;
+  }
+
+  .navbar-nav {
+    display: flex;
+    text-align: right;
+    align-items: right;
+    margin-left: 0vh;
   }
   
   @media (min-width:300px) and (max-width:600px) {
