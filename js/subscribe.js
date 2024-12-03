@@ -3,9 +3,19 @@ let maxPlayers = 0;
         function atualizarCampos() {
           const modalidade = document.getElementById("modalidade").value;
           if (modalidade === "voleibol") {
-            maxPlayers = 9;  
+            maxPlayers = 11;  
           } else if (modalidade === "futsal") {
-            maxPlayers = 10;  
+            maxPlayers = 11;  
+          } else if (modalidade === "basquete") {
+            maxPlayers = 11;
+          } else if (modalidade === "handebol") {
+            maxPlayers = 11;
+          } else if (modalidade === "xadrez") {
+            maxPlayers = 1;
+          } else if (modalidade === "tenismesa") {
+            maxPlayers = 1;
+          } else if (modalidade === "praia") {
+            maxPlayers = 2;
           } else {
             maxPlayers = 0;
           }

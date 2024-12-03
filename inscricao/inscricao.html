@@ -55,9 +55,26 @@
     <input type="hidden" name="_next" value="http://intercursos.netlify.app/inscricao/inscricao.html">
     <input type="hidden" name="_captcha" value="false">
       <h2>Cadastro da Equipe</h2>
+      
+      <label for="gender">Gênero da Modalidade</label>
+      <select id="gender" name="gender" required>
+          <option value="">Escolha o gênero</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+      </select>
 
-      <label for="course">Curso da Equipe</label>
-      <input type="text" id="course" name="course" placeholder="Digite o curso da equipe" required>
+      <label for="Course">Curso</label>
+      <select id="course" name="course" required>
+          <option value="">Selecione seu curso</option>
+          <option value="eletro">Eletrotécnica</option>
+          <option value="mec">Mecânica</option>
+          <option value="info">Informática</option>
+          <option value="edif">Edificações</option>
+          <option value="ctb">Contabilidade</option>
+          <option value="cta">Controle Ambiental</option>
+          <option value="im">Instrumentos Musicais</option>
+          <option value="eletronica">Eletrônica</option>
+      </select>
   
       <label for="captain-name">Nome Completo do Capitão</label>
       <input type="text" id="captain-name" name="captain-name" placeholder="Digite o nome do capitão" required>
@@ -70,6 +87,11 @@
           <option value="">Escolha uma modalidade</option>
           <option value="voleibol">Voleibol</option>
           <option value="futsal">Futsal</option>
+          <option value="basquete">Basquete</option>
+          <option value="praia">Vôlei de areia</option>
+          <option value="handebol">Handebol</option>
+          <option value="tenismesa">Tênis de mesa</option>
+          <option value="xadrez">Xadrez</option>
       </select>
 
       <label>Jogadores</label>
