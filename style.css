@@ -1,14 +1,84 @@
 main {
-  display: flex; /* Alinha os cards em uma única linha */
-  justify-content: center; /* Centraliza os cards horizontalmente */
-  gap: 20px; /* Espaço entre os cards */
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
   align-items: center;
   padding: 50px;
   font-family: "Roboto", sans-serif;
-  flex-wrap: wrap; /* Permite que os cards "quebrem" para a próxima linha */
+  flex-wrap: wrap; 
   max-width: 900px;
-  margin: auto; /* Centraliza o container horizontalmente */
+  margin: auto;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.sub-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vh;
+}
+
+.subscribe {
+  position: relative;
+ height: 50px;
+ padding: 0 20px;
+ border: 2px solid #238e12;
+ background: #fcf9f9;
+ user-select: none;
+ white-space: nowrap;
+ transition: all .05s linear;
+ font-family: inherit;
+ font-family: "Roboto", sans-serif;
+}
+
+.subscribe:before, .subscribe:after {
+  content: "";
+  position: absolute;
+  background: #fcf9f9;
+  transition: all .2s linear;
+ }
+
+ .subscribe:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+ }
+ 
+ .subscribe:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+ }
+ 
+ .subscribe:hover {
+  cursor: pointer;
+ }
+ 
+ .subscribe:active {
+  transform: scale(0.95);
+ }
+ 
+ .subscribe:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+ }
+ 
+ .subscribe:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+ }
+ 
+ .subscribe span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+ }
 
 .button {
   margin-right: 6vh;
@@ -77,23 +147,23 @@ main {
 
 @media (min-width: 350px) and (max-width: 480px) {
   main {
-    justify-content: space-around; /* Garante espaçamento proporcional */
+    justify-content: space-around; 
   }
 
   .card {
-    width: 8rem; /* Reduz mais os cards */
+    width: 8rem;
     height: 16rem;
   }
   
   main {
-    display: flex; /* Alinha os cards em uma única linha */
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 20px; /* Espaço entre os cards */
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
     align-items: center;
     padding: 0px;
     font-family: "Roboto", sans-serif;
-    flex-wrap: wrap; /* Permite que os cards "quebrem" para a próxima linha */
+    flex-wrap: wrap;
     max-width: 900px;
-    margin: auto; /* Centraliza o container horizontalmente */
+    margin: auto; 
   }
 }
