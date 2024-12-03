@@ -51,30 +51,38 @@
   </nav>
 </header>
 <body>
-    <form action="https://formsubmit.co/killuahunter270@gmail.com" method="POST" id="team-form">
-      <input type="hidden" name="_next" value="http://intercursos.netlify.app/inscricao/inscricao.html">
-      <input type="hidden" name="_captcha" value="false">
-        <h2>Cadastro da Equipe</h2>
-        
-        <label for="course">Curso da Equipe</label>
-        <input type="text" id="course" name="course" placeholder="Digite o curso da equipe" required>
-    
-        <label for="captain-name">Nome Completo do Capitão</label>
-        <input type="text" id="captain-name" name="captain-name" placeholder="Digite o nome do capitão" required>
-    
-        <label for="captain-id">Matrícula do Capitão</label>
-        <input type="text" id="captain-id" name="captain-id" placeholder="Digite a matrícula do capitão" required>
-    
-        <label>Jogadores</label>
-        <div class="players-container" id="players-container">
-          <div class="player-field">
-            <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
-          </div>
+  <form action="https://formsubmit.co/killuahunter270@gmail.com" method="POST" id="team-form">
+    <input type="hidden" name="_next" value="http://intercursos.netlify.app/inscricao/inscricao.html">
+    <input type="hidden" name="_captcha" value="false">
+      <h2>Cadastro da Equipe</h2>
+
+      <label for="course">Curso da Equipe</label>
+      <input type="text" id="course" name="course" placeholder="Digite o curso da equipe" required>
+  
+      <label for="captain-name">Nome Completo do Capitão</label>
+      <input type="text" id="captain-name" name="captain-name" placeholder="Digite o nome do capitão" required>
+  
+      <label for="captain-id">Matrícula do Capitão</label>
+      <input type="text" id="captain-id" name="captain-id" placeholder="Digite a matrícula do capitão" required>
+
+      <label for="modalidade">Selecione a Modalidade</label>
+      <select id="modalidade" name="modalidade" onchange="atualizarCampos()" required>
+          <option value="">Escolha uma modalidade</option>
+          <option value="voleibol">Voleibol</option>
+          <option value="futsal">Futsal</option>
+      </select>
+
+      <label>Jogadores</label>
+      <div class="players-container" id="players-container">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
         </div>
-        <button type="button" id="add-player-button">Adicionar Jogador</button>
-    
-        <button id="submit-button" type="submit">Enviar</button>
-      </form>
+      </div>
+      <button type="button" id="add-player-button" onclick="adicionarJogador()">Adicionar Jogador</button>
+  
+      <button id="submit-button" type="submit">Enviar</button>
+    </form>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 <script src="../js/subscribe.js"></script>
