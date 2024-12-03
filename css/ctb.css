@@ -27,16 +27,12 @@ main > div {
 }
 
 .title {
-  margin-bottom: -3vh;
-}
-
-.container-fluid {
-  margin-top: -2vh;
+  margin-bottom: 0vh;
 }
 
 .navbar-nav {
   display: flex;
   text-align: right;
   align-items: right;
-  margin-left: 50vh;
+  margin-left: 0vh;
 }
