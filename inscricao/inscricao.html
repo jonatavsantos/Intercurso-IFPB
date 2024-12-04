@@ -57,14 +57,14 @@
       <h2>Cadastro da Equipe</h2>
       
       <label for="gender">Gênero da Modalidade</label>
-      <select id="gender" name="gender" required>
+      <select id="gender" name="gender" onchange="adicionarInfos()" required>
           <option value="">Escolha o gênero</option>
           <option value="masculino">Masculino</option>
           <option value="feminino">Feminino</option>
       </select>
 
       <label for="Course">Curso</label>
-      <select id="course" name="course" required>
+      <select id="course" name="course" onchange="adicionarInfos()" required>
           <option value="">Selecione seu curso</option>
           <option value="eletro">Eletrotécnica</option>
           <option value="mec">Mecânica</option>
@@ -83,7 +83,7 @@
       <input type="text" id="captain-id" name="captain-id" placeholder="Digite a matrícula do capitão" required>
 
       <label for="modalidade">Selecione a Modalidade</label>
-      <select id="modalidade" name="modalidade" onchange="atualizarCampos()" required>
+      <select id="modalidade" name="modality" onchange="atualizarCampos()" required>
           <option value="">Escolha uma modalidade</option>
           <option value="voleibol">Voleibol</option>
           <option value="futsal">Futsal</option>

@@ -1,4 +1,24 @@
 let maxPlayers = 0;
+        function adicionarGenero() {
+
+          const genero = document.getElementById("gender").value;
+
+          if (!genero) {
+            alert("Por favor, selecione o gênero da equipe antes de adicionar jogadores!")
+            return false;
+          }
+          return true;
+        }
+
+        function adicionarCurso () {
+          const curso = document.getElementById("course").value;
+
+          if (!curso) {
+            alert("Por favor, selecione o curso antes de adicionar jogadores!")
+            return false;
+          }
+          return true;
+        }
 
         function atualizarCampos() {
           const modalidade = document.getElementById("modalidade").value;
@@ -15,7 +35,7 @@ let maxPlayers = 0;
           } else if (modalidade === "tenismesa") {
             maxPlayers = 1;
           } else if (modalidade === "praia") {
-            maxPlayers = 2;
+            maxPlayers = 1;
           } else {
             maxPlayers = 0;
           }
@@ -25,9 +45,21 @@ let maxPlayers = 0;
         }
 
         function adicionarJogador() {
+
+          const validarGen = adicionarGenero()
+          if (!validarGen) {
+            return;
+          }
+
+          const validarCur = adicionarCurso()
+          if (!validarCur) {
+            return;
+          }
+
           const modalidade = document.getElementById("modalidade").value;
+
           if (!modalidade) {
-            alert("Por favor, selecione sua modalidade antes de adicionar jogadores.");
+            alert("Por favor, selecione sua modalidade antes de adicionar jogadores!");
             return;
           }
 
