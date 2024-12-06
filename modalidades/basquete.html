@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <title>Inscrição Basquete</title>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt="" height="30%" width="30%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../inscricao/modalidade.html">Inscrever-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos/mec.html">Mecânica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos/info.html">Informática</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos/edif.html">Edificações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos/im.html">I.Musicais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos/cta.html">C.Ambiental</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos/eletro.html">Eletrotécnica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos/eletronica.html">Eletrônica</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cursos/ctb.html">Contabilidade</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+  <form action="https://formsubmit.co/killuahunter270@gmail.com" method="POST" id="team-form">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/modalidades/basquete.html">
+    <input type="hidden" name="_captcha" value="false">
+      <h2>Equipe Basquete</h2>
+      
+      <label for="gender">Selecione o gênero da equipe</label>
+      <select id="gender" name="gender" required>
+          <option value="" hidden></option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+      </select>
+
+      <label for="Course">Curso</label>
+      <select id="course" name="course" required>
+          <option value="" hidden></option>
+          <option value="eletro">Eletrotécnica</option>
+          <option value="mec">Mecânica</option>
+          <option value="info">Informática</option>
+          <option value="edif">Edificações</option>
+          <option value="ctb">Contabilidade</option>
+          <option value="cta">Controle Ambiental</option>
+          <option value="im">Instrumentos Musicais</option>
+          <option value="eletronica">Eletrônica</option>
+      </select>
+  
+      <label for="captain-name">Capitão: Nome Completo - Matrícula</label>
+      <input type="text" id="captain-name" name="captain-name" placeholder="Digite o nome do capitão" required>
+  
+      <label for="captain-phone">Telefone do Capitão</label>
+      <input type="tel" id="captain-phone" name="captain-phone" placeholder="(XX) X XXXX-XXXX" pattern="^(\(?\d{2}\)?\s?)?\d{5}-?\d{4}$" maxlength="16">
+
+      <label for="modalidade">Modalidade</label>
+      <select id="modalidade" name="modality" required>
+          <option value="Basquete">Basquete</option>
+      </select>
+      <label for="info"><p>O capitão é o Jogador 1, insira os próximos integrantes preenchendo os espaços abaixo:</p></label>
+      <label>Jogador(a) - 2</label>
+      <div class="players-container" id="player-2">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
+        </div>
+      </div>
+      <label>Jogador(a) - 3</label>
+      <div class="players-container" id="player-3">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
+        </div>
+      </div>
+      <label>Jogador(a) - 4</label>
+      <div class="players-container" id="player-4">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
+        </div>
+      </div>
+      <label>Jogador(a) - 5</label>
+      <div class="players-container" id="player-5">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
+        </div>
+      </div>
+      <label>Jogador(a) - 6</label>
+      <div class="players-container" id="player-6">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
+        </div>
+      </div>
+      <label>Jogador(a) - 7</label>
+      <div class="players-container" id="player-7">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador">
+        </div>
+      </div>
+      <label>Jogador(a) - 8</label>
+      <div class="players-container" id="player-8">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador">
+        </div>
+      </div>
+      <label>Jogador(a) - 9</label>
+      <div class="players-container" id="player-9">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador">
+        </div>
+      </div>
+      <label>Jogador(a) - 10</label>
+      <div class="players-container" id="player-10">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador">
+        </div>
+      </div>
+      <label>Jogador(a) - 11</label>
+      <div class="players-container" id="player-11">
+        <div class="player-field">
+          <input type="text" name="player[]" placeholder="Digite o nome do jogador">
+        </div>
+      </div>
+      <button id="submit-button" type="submit">Enviar</button>
+    </form>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+<script src="../js/subscribe.js"></script>
+</html>

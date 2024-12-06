@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/subscribe.css">
-    <title>Intercurso Inscrição</title>
+    <title>Inscrição Tênis de mesa</title>
 </head>
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,7 +19,7 @@
             <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../inscricao/inscricao.html">Inscrever-se</a>
+            <a class="nav-link" href="../inscricao/modalidade.html">Inscrever-se</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../cursos/mec.html">Mecânica</a>
@@ -52,20 +52,20 @@
 </header>
 <body>
   <form action="https://formsubmit.co/killuahunter270@gmail.com" method="POST" id="team-form">
-    <input type="hidden" name="_next" value="http://intercursos.netlify.app/inscricao/inscricao.html">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/modalidades/tenis.html">
     <input type="hidden" name="_captcha" value="false">
-      <h2>Cadastro da Equipe</h2>
+      <h2>Tênis de mesa</h2>
       
-      <label for="gender">Gênero da Modalidade</label>
-      <select id="gender" name="gender" onchange="adicionarInfos()" required>
-          <option value="">Escolha o gênero</option>
+      <label for="gender">Selecione o gênero do competidor</label>
+      <select id="gender" name="gender" required>
+          <option value="" hidden></option>
           <option value="masculino">Masculino</option>
           <option value="feminino">Feminino</option>
       </select>
 
       <label for="Course">Curso</label>
-      <select id="course" name="course" onchange="adicionarInfos()" required>
-          <option value="">Selecione seu curso</option>
+      <select id="course" name="course" required>
+          <option value="" hidden></option>
           <option value="eletro">Eletrotécnica</option>
           <option value="mec">Mecânica</option>
           <option value="info">Informática</option>
@@ -76,32 +76,16 @@
           <option value="eletronica">Eletrônica</option>
       </select>
   
-      <label for="captain-name">Nome Completo do Capitão</label>
-      <input type="text" id="captain-name" name="captain-name" placeholder="Digite o nome do capitão" required>
+      <label for="captain-name">Nome Completo - Matrícula</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
   
-      <label for="captain-id">Matrícula do Capitão</label>
-      <input type="text" id="captain-id" name="captain-id" placeholder="Digite a matrícula do capitão" required>
+      <label for="captain-phone">Telefone</label>
+      <input type="tel" id="phone" name="phone" placeholder="(XX) X XXXX-XXXX" pattern="^(\(?\d{2}\)?\s?)?\d{5}-?\d{4}$" maxlength="16">
 
-      <label for="modalidade">Selecione a Modalidade</label>
-      <select id="modalidade" name="modality" onchange="atualizarCampos()" required>
-          <option value="">Escolha uma modalidade</option>
-          <option value="voleibol">Voleibol</option>
-          <option value="futsal">Futsal</option>
-          <option value="basquete">Basquete</option>
-          <option value="praia">Vôlei de areia</option>
-          <option value="handebol">Handebol</option>
-          <option value="tenismesa">Tênis de mesa</option>
-          <option value="xadrez">Xadrez</option>
+      <label for="modalidade">Modalidade</label>
+      <select id="modalidade" name="modality" required>
+          <option value="Tênis de mesa">Tênis de mesa</option>
       </select>
-
-      <label>Jogadores</label>
-      <div class="players-container" id="players-container">
-        <div class="player-field">
-          <input type="text" name="player[]" placeholder="Digite o nome do jogador" required>
-        </div>
-      </div>
-      <button type="button" id="add-player-button" onclick="adicionarJogador()">Adicionar Jogador</button>
-  
       <button id="submit-button" type="submit">Enviar</button>
     </form>
 

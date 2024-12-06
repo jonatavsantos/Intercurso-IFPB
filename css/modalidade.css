@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    background-color: #f4f4f4;
+  }
+
+  .navbar-nav {
+    display: flex;
+    text-align: right;
+    align-items: right;
+    margin-left: 0vh;
+  }
+
+  main {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+    font-family: "Roboto", sans-serif;
+    flex-wrap: wrap; 
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .card {
+    width: 12rem;
+    height: 24rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: #f0f0f0;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  }
+  .card img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-out;
+  }
+  .card h3 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: -3vh;
+    transition: inset 0.3s 0.3s ease-out;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .card p, .card a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+  }
+  .card p {
+    inset: auto auto 30px 30px;
+  }
+  .card a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+  .card:hover h3 {
+    inset: auto auto 220px 30px;
+    transition: inset 0.3s ease-out;
+  }
+  .card:hover p, .card:hover a {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+  .card:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+  }
+  
+  .material-symbols-outlined {
+    vertical-align: middle;
+    margin-right: 1vh;
+  }
+  
+  @media (min-width:300px) and (max-width:600px) {
+    #submit-button {
+        color: rgb(0, 0, 0);
+        width: 100%;
+        margin-left:0vh;
+        margin-top: 5vh;
+      }
+
+      main {
+        justify-content: space-around; 
+      }
+    
+      .card {
+        width: 8rem;
+        height: 16rem;
+      }
+      
+      main {
+        display: flex; 
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding: 0px;
+        font-family: "Roboto", sans-serif;
+        flex-wrap: wrap;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 5vh;
+      }
+  }
